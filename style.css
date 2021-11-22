@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header design */
+header {
+    background: powderblue;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+h1 {
+    font-size: 1.8rem;
+    color: hsl(233, 26%, 24%);
+}
+h2 {
+    font-size: 1rem;
+    color: hsl(233, 26%, 24%);
+}
+
+/* Element Color*/
+.first, .last {
+    background: #50CB93;
+}
+.first-left, .first-right, .last-left, .last-right{
+    background: #71EFA3;
+}
+.middle-fast, .middle-last {
+    background: #ACFFAD;
+}
+
+/* Grid Rrea */
+.container{
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    grid-template-columns: 5rem 5rem;
+    grid-template-rows: 1.3rem 6.45rem 3.25rem 3.25rem 6.45rem 1.3rem;
+    grid-template-areas: 
+    "f f"
+    "fl fr"
+    "mf mf"
+    "ml ml"
+    "ll lr"
+    "l l" ;
+}
+
+/* Area Select & Border*/
+.first {
+    grid-area: f;
+    border: 0.125rem solid black;
+}
+.first-left {
+    grid-area: fl;
+    border: 0.125rem solid black;
+    border-top: none;
+}
+.first-right {
+    grid-area: fr;
+    border: 0.125rem solid black;
+    border-top: none;
+    border-left: none;
+}
+.middle-fast {
+    grid-area: mf;
+    border: 0.125rem solid black;
+    border-top: none;
+    border-bottom: 0.125rem dotted black;
+}
+.middle-last {
+    grid-area: ml;
+    border: 0.125rem solid black;
+    border-top: none;
+    border-bottom: none;
+}
+.last-left {
+    grid-area: ll;
+    border: 0.125rem solid black;
+    border-bottom: none;
+}
+.last-right {
+    grid-area: lr;
+    border: 0.125rem solid black;
+    border-bottom: none;
+    border-left: none;
+}
+.last {
+    grid-area: l;
+    border: 0.125rem solid black;
+}
